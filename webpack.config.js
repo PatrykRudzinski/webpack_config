@@ -1,10 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = ({dev}) => ({
+module.exports = ({dev, output}) => ({
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, dev ? 'dist' : 'build'),
+    path: path.resolve(__dirname, output || 'dist'),
     filename: 'main.js'
   },
   devtool: dev ? 'inline-source-map' : 'none',
@@ -29,7 +29,7 @@ module.exports = ({dev}) => ({
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: dev ? new Date().toLocaleTimeString() : 'title',
+      title: 'WebpackConfig',
     })
   ]
 });

@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --mode development --env.dev",
-    "build": "webpack --mode production --env"
+    "build": "webpack --mode production --env.output=build",
+    "docs": "webpack --mode production --env.output=docs"
   },
   "keywords": [],
   "author": "",
