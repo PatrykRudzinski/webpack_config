@@ -9,10 +9,9 @@ module.exports = ({dev}) => ({
   },
   devtool: dev ? 'inline-source-map' : 'none',
   devServer: {
-    contentBase: './dist',
     port: 3000,
+    contentBase: './dist',
     clientLogLevel: 'info',
-    color: true,
   },
   module: {
     rules: [

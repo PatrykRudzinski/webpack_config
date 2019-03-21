@@ -1,2 +1,3 @@
-const fun = () => console.log('fun');
-fun();
+import magicScript from './script';
+
+magicScript();
