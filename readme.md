@@ -1,6 +1,5 @@
-#Webpack configuration
-
-
+#  Webpack configuration
+[live version](https://patrykrudzinski.github.io/webpack_config/)
 
 to install all dependencies 
 > npm i
